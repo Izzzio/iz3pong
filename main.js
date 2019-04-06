@@ -84,7 +84,7 @@ window.onload = function () {
      * Get handshakes
      */
     candy.starwave.registerMessageHandler(MESSAGES.handshake, function (message) {
-        if(playerBAddress !== 0) {
+        if(playerBAddress.length !== 0) {
             return;
         }
 
