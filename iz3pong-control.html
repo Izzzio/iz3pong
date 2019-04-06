@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IZZZIO Pong controller</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="Candy/candy.js"></script>
+    <script src="Candy/moment.js"></script>
+    <script src="Candy/NodeMetaInfo.js"></script>
+    <script src="Candy/starwaveProtocol.js"></script>
+
+
+
+    <style>
+        .button {
+            font-size: 50vw;
+            display: inline;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: #191919;
+        }
+
+        .button:active {
+            color: crimson;
+        }
+
+        .button-holder {
+            width: 100%;
+            display: inline;
+        }
+
+        .noselect {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Player <span id="playerNo">A</span></h2>
+<div class="button-holder noselect">
+    <div id="left"  class="button">⇦</div>
+    <div id="right" class="button" >⇨</div>
+</div>
+
+<script src="mainController.js"></script>
+
+</body>
+</html>
